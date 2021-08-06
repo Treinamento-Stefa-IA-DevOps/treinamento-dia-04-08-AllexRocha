@@ -5,7 +5,7 @@ FROM centos/python-36-centos7
 WORKDIR /app
 
 # copy the dependencies file to the working directory
-COPY requirements .
+COPY /codigo/requirements .
 
 # install dependencies
 RUN pip install -r requirements
